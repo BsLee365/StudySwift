@@ -22,6 +22,7 @@ print("원소_first_empty:", 원소_first_empty)
 print("-------첫번째 단어의 마지막 글자--------")
 let names: [String] = ["Apple", "Elsa"]
 
+
 //names.first : Apple
 //names.last : Elsa
 
