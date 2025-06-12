@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXFileReference section */
+		2D3F100F2DFAF471003F249C /* Structure,Class.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Structure,Class.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		2D3F10142DFB1617003F249C /* TernaryOperator.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = TernaryOperator.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		2D3F10172DFB1E38003F249C /* Function.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Function.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		2D41D9FA2DF5984B00E4BE89 /* ToDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -32,6 +35,9 @@
 		2D41D9F12DF5984B00E4BE89 = {
 			isa = PBXGroup;
 			children = (
+				2D3F10172DFB1E38003F249C /* Function.playground */,
+				2D3F10142DFB1617003F249C /* TernaryOperator.playground */,
+				2D3F100F2DFAF471003F249C /* Structure,Class.playground */,
 				2D41D9FC2DF5984B00E4BE89 /* ToDo */,
 				2D41D9FB2DF5984B00E4BE89 /* Products */,
 			);
