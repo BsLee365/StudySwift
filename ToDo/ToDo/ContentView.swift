@@ -38,7 +38,7 @@ struct ContentView: View {
                 ForEach(todoList) { todo in
                     HStack {
                         
-                        var flag = todo.isCompleted ? "circle.fill" : "circle"
+                        let flag = todo.isCompleted ? "circle.fill" : "circle"
                         Image(systemName: flag)
                             .foregroundStyle(Color.pink)
                             .onTapGesture {
@@ -47,10 +47,10 @@ struct ContentView: View {
                         
                         NavigationLink {
                             // 다음화면의 뷰
-                            Text(todo.description)
+                            TodoDetail(todo: todo)
                         } label: {
                             // 버튼이 어떻게 생길지
-                            var cFlag = todo.isCompleted ? Color.gray : Color.primary
+                            let cFlag = todo.isCompleted ? Color.gray : Color.primary
                             Text(todo.title)
                                 .strikethrough(todo.isCompleted, color: Color.gray)
                                 .foregroundStyle(cFlag)

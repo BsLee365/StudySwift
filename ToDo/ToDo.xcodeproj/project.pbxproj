@@ -6,10 +6,15 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		2D3F10212DFC6A48003F249C /* TodoDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3F10202DFC6A48003F249C /* TodoDetail.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		2D3F100F2DFAF471003F249C /* Structure,Class.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Structure,Class.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		2D3F10142DFB1617003F249C /* TernaryOperator.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = TernaryOperator.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		2D3F10172DFB1E38003F249C /* Function.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Function.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		2D3F10202DFC6A48003F249C /* TodoDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoDetail.swift; sourceTree = "<group>"; };
 		2D41D9FA2DF5984B00E4BE89 /* ToDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -35,6 +40,7 @@
 		2D41D9F12DF5984B00E4BE89 = {
 			isa = PBXGroup;
 			children = (
+				2D3F10202DFC6A48003F249C /* TodoDetail.swift */,
 				2D3F10172DFB1E38003F249C /* Function.playground */,
 				2D3F10142DFB1617003F249C /* TernaryOperator.playground */,
 				2D3F100F2DFAF471003F249C /* Structure,Class.playground */,
@@ -125,6 +131,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D3F10212DFC6A48003F249C /* TodoDetail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
