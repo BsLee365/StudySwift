@@ -41,9 +41,13 @@ struct TodoDetail: View {
         .toolbar{
             ToolbarItem{
                 Button("저장") {
-                    // modelContext.insert(todo(title: todo.title, todoDesc: todo.todoDesc))
-                    let newItem = TodoList(title: todo.title, desc: todo.todoDesc)
-                    modelContext.insert(newItem)
+                    do {
+                      try modelContext.save()
+                    }
+                    catch {
+                        print("Error Context Save: \(error)")
+                    }
+                    
                 }
             }
         }

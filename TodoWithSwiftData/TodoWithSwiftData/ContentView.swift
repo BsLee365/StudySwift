@@ -27,9 +27,7 @@ struct ContentView: View {
                             }
                         NavigationLink {
                             TodoDetail(
-                                todo: .constant(
-                                    TodoList(title: "", desc: "")
-                                )
+                                todo: .constant(todo)
                             )
                         } label: {
                             let cFlag = todo.isCompleted ? Color.gray : Color.primary
