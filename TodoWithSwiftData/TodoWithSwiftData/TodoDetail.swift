@@ -42,7 +42,7 @@ struct TodoDetail: View {
             ToolbarItem{
                 Button("저장") {
                     do {
-                      try modelContext.save()
+                      // try modelContext.save()
                     }
                     catch {
                         print("Error Context Save: \(error)")
