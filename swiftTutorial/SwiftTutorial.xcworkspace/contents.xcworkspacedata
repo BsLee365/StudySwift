@@ -2,6 +2,24 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:Enumeration.playground">
+   </FileRef>
+   <FileRef
+      location = "group:Structure.playground">
+   </FileRef>
+   <FileRef
+      location = "group:CloserExam.playground">
+   </FileRef>
+   <FileRef
+      location = "group:Closure.playground">
+   </FileRef>
+   <FileRef
+      location = "group:Functions.playground">
+   </FileRef>
+   <FileRef
+      location = "group:If-Else.playground">
+   </FileRef>
+   <FileRef
       location = "group:Operators.playground">
    </FileRef>
    <FileRef

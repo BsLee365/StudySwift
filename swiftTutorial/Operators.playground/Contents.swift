@@ -1,6 +1,7 @@
 import Foundation
 
 
+// 6.19
 let myAge = 22
 let yourAge = 20
 
@@ -41,4 +42,8 @@ let age = 30
 
 
 let message = age >= 18 ? "your adult" : "your not adult"
+
+
+
+//6.20
 
