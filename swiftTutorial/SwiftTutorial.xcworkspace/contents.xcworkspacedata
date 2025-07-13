@@ -2,6 +2,15 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:Collections.playground">
+   </FileRef>
+   <FileRef
+      location = "group:Error-Handling.playground">
+   </FileRef>
+   <FileRef
+      location = "group:Practice.playground">
+   </FileRef>
+   <FileRef
       location = "group:Optionals.playground">
    </FileRef>
    <FileRef
