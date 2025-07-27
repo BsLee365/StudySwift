@@ -11,17 +11,12 @@ struct FrameworkDetailView: View {
     
     var frameWork: Framework
     
-    @Binding var isShowingDetailView: Bool
-    
     @State private var isShowingSafariView: Bool = false // FrameworkDetailView에서만 동작을 하기 때문에, @State로 작성해줌
     
     var body: some View {
         
         
         VStack {
-            
-            XDismissButton(isShowingDetailView: $isShowingDetailView)
-
             Spacer()
             FrameworkTitleView(framework: frameWork)
             Text(frameWork.description)
@@ -42,5 +37,5 @@ struct FrameworkDetailView: View {
 }
 
 #Preview {
-    FrameworkDetailView(frameWork: MockData.sampleFramework, isShowingDetailView: .constant(false))
+    FrameworkDetailView(frameWork: MockData.sampleFramework)
 }

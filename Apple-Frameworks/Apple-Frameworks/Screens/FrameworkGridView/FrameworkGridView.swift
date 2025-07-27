@@ -15,23 +15,24 @@ struct FrameworkGridView: View {
     var body: some View {
         
         // TODO NavigationStack으로 변경
-        NavigationView {
+        NavigationStack {
             ScrollView {
                 LazyVGrid(columns: viewModel.columns) {
-                    
+                     
                     ForEach(MockData.frameworks, id: \.id)
                     { framework in
-                        FrameworkTitleView(framework: framework)
-                            .onTapGesture {
-                                viewModel.selectedFramework = framework
-                            }
+                        // Stack에 추가하는 역할
+                        NavigationLink(value: framework) {
+                            // 해당 view로 이동
+                            FrameworkTitleView(framework: framework)
+                        }
                     }
                 }
             }
             .navigationTitle("🍎 Frameworks")
-            .sheet(isPresented: $viewModel.isShowingDetailView) {
-                FrameworkDetailView(frameWork: viewModel.selectedFramework!,
-                                    isShowingDetailView: $viewModel.isShowingDetailView)
+            // 목적지를 설정하는 역할
+            .navigationDestination(for: Framework.self) { framework in
+                FrameworkDetailView(frameWork: framework)
             }
         }
     }

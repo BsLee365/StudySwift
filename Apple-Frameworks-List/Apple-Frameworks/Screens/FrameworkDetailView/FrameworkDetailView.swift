@@ -27,8 +27,15 @@ struct FrameworkDetailView: View {
             Button {
                 isShowingSafariView = true
             }  label : {
-                AFButton(title: "더 알아보기")
+                // AFButton(title: "더 알아보기")
+                Label("더 알아보기", systemImage: "book.fill")
             }
+            .buttonStyle(.borderedProminent)
+            .controlSize(.large)
+            .foregroundColor(.white)
+            .buttonBorderShape(.roundedRectangle(radius: 230))
+            .tint(.red)
+            
         }
         .fullScreenCover(isPresented: $isShowingSafariView,
                content: {

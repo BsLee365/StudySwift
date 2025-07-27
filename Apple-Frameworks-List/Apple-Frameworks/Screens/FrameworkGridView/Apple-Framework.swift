@@ -15,9 +15,8 @@ struct FrameworkGridView: View {
     var body: some View {
         
         // TODO NavigationStack으로 변경
-        NavigationView {
+        NavigationStack {
             List {
-                
                 ForEach(MockData.frameworks, id: \.id)
                 { framework in
                     
